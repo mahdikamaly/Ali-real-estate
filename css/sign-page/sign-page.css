@@ -152,12 +152,96 @@ body .sign-in form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 3em;
+  gap: 1rem;
+}
+
+body .sign-in form .form-header {
+  gap: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .sign-in form .form-body {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+body .sign-in form .form-body .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+body .sign-in form .form-body .form-group label {
+  width: 5ch;
+  text-align: right;
+}
+
+body .sign-in form .form-body .form-group input {
+  all: unset;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.2em 0.5em;
+  border-radius: 0.3rem;
+}
+
+body .sign-in form .form-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+body .sign-in form .form-buttons button, body .sign-in form .form-buttons a {
+  all: unset;
+  width: 6ch;
+  background-color: #845ec2;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0.3em;
+  color: white;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body .sign-in form .form-buttons button:hover, body .sign-in form .form-buttons a:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .area {
@@ -189,6 +273,9 @@ body .sign-in form {
   -webkit-animation: animate 25s linear infinite;
           animation: animate 25s linear infinite;
   bottom: -150px;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0rem 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0rem 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
 }
 
 .circles li:nth-child(1) {
@@ -286,13 +373,11 @@ body .sign-in form {
     -webkit-transform: translateY(0) rotate(0deg);
             transform: translateY(0) rotate(0deg);
     opacity: 1;
-    border-radius: 0;
   }
   100% {
     -webkit-transform: translateY(-1000px) rotate(720deg);
             transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
-    border-radius: 50%;
   }
 }
 
@@ -301,13 +386,11 @@ body .sign-in form {
     -webkit-transform: translateY(0) rotate(0deg);
             transform: translateY(0) rotate(0deg);
     opacity: 1;
-    border-radius: 0;
   }
   100% {
     -webkit-transform: translateY(-1000px) rotate(720deg);
             transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
-    border-radius: 50%;
   }
 }
 /*# sourceMappingURL=sign-page.css.map */
