@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "BYekan";
+    src: url("/fonts/BYekan.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+
+    a {
+        padding-left: 0.25rem;
+        text-decoration: none;
+    }
+}
+
+.click {
+    cursor: pointer;
+    transition: all ease 0.5s !important;
+    &:hover {
+        color: black;
+        a {
+            color: black !important;
+        }
+        background-color: white;
+        transform: scale(0.9);
+    }
+}
+
+.selected {
+    background-color: white;
+    color: black !important;
+    border-radius: 0.5rem;
+}
+
+$color-1: #845ec2;
+$color-2: #ddf1fa;
+$color-3: #338ba7;
+
+body,
+html {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "BYekan", sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: $color-1;
+    position: fixed;
+    top: 0rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    color: white;
+    padding: 1em 2em;
+    gap: 2rem;
+    .right {
+        display: flex;
+        .nav-bar {
+            display: flex;
+            gap: 1rem;
+            flex-direction: row-reverse;
+            li {
+                border: 0.1rem white solid;
+                padding: 0.4em 1em;
+                border-radius: 0.5rem;
+                list-style: none;
+                display: flex;
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    color: white;
+                }
+            }
+            .user-account {
+            }
+        }
+    }
+
+    .left {
+    }
+
+    img {
+        width: 4rem;
+        height: 4rem;
+        object-fit: cover;
+        border-radius: 50vw;
+    }
+}

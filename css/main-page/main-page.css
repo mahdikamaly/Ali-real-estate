@@ -1,1 +1,117 @@
-/* No CSS *//*# sourceMappingURL=main-page.css.map */
+@font-face {
+  font-family: "BYekan";
+  src: url("/fonts/BYekan.ttf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+* a {
+  padding-left: 0.25rem;
+  text-decoration: none;
+}
+
+.click {
+  cursor: pointer;
+  -webkit-transition: all ease 0.5s !important;
+  transition: all ease 0.5s !important;
+}
+
+.click:hover {
+  color: black;
+  background-color: white;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.click:hover a {
+  color: black !important;
+}
+
+.selected {
+  background-color: white;
+  color: black !important;
+  border-radius: 0.5rem;
+}
+
+body,
+html {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "BYekan", sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #845ec2;
+  position: fixed;
+  top: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  padding: 1em 2em;
+  gap: 2rem;
+}
+
+header .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .right .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+header .right .nav-bar li {
+  border: 0.1rem white solid;
+  padding: 0.4em 1em;
+  border-radius: 0.5rem;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .right .nav-bar li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  color: white;
+}
+
+header img {
+  width: 4rem;
+  height: 4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50vw;
+}
+/*# sourceMappingURL=main-page.css.map */
