@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Panel Create</title>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/all-in-one/css/bootstrap/bootstrap.min.css" media="all" type="text/css">
+
+    <!-- Admin Panel Css -->
+    <link rel="stylesheet" href="/all-in-one/css/admin-panel/admin.panel.css" media="all" type="text/css">
+
+
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="left">
+            <a class="click" href="#">خروج</a>
+        </div>
+        <div class="right">
+            <h1>پنل مدریت</h1>
+        </div>
+    </nav>
+
+    <section class="sidebar">
+        <div class="sidebar-header">
+            بخش های مدریتی
+        </div>
+        <section class="sidebar-link">
+            <a class="click" href="#">پنل <span class="iconify" data-icon="carbon:open-panel-filled-right"></span></a>
+        </section>
+        <section class="sidebar-link">
+            <a class="click selected" href="/all-in-one/html/admin-panel/category/index.html">دسته بندی ها<span
+                    class="iconify" data-icon="bx:category"></span></a>
+        </section>
+        <section class="sidebar-link">
+            <a class="click" href="/all-in-one/html/admin-panel/posts/index.html">پست ها<span class="iconify"
+                    data-icon="ic:baseline-article"></span></a>
+        </section>
+    </section>
+
+    <section class="app" id="app">
+
+        <section class="container-fluid">
+            <section class="row">
+                <section class="table-container">
+
+                    <section class="table-container-header">
+                        <h1>دسته بندی ها</h1>
+                        <a href="/all-in-one/html/admin-panel/category/create.html" class="click">ایجاد دسته بندی</a>
+                    </section>
+
+                    <section class="table-container-body">
+                        <table class="table-striped table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>اسم</th>
+                                    <th>تنظیمات</th>
+                                </tr>
+                            </thead>
+
+                            <!-- Each Record Here -->
+                            <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td>name</td>
+                                    <td class="buttons">
+                                        <form action="#" name="item-1" method="get">
+                                            <a href="#" class="btn btn-info btn-sm">ویرایش</a>
+                                            <input class="btn btn-danger btn-sm" value="حذف" type="submit"
+                                                name="delete">
+                                        </form>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+    </section>
+
+
+
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+</body>
+
+</html>

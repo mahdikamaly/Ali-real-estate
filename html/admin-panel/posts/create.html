@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Panel Create</title>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/all-in-one/css/bootstrap/bootstrap.min.css" media="all" type="text/css">
+
+    <!-- Admin Panel Css -->
+    <link rel="stylesheet" href="/all-in-one/css/admin-panel/admin.panel.css" media="all" type="text/css">
+
+
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="left">
+            <a class="click" href="#">خروج</a>
+        </div>
+        <div class="right">
+            <h1>پنل مدریت</h1>
+        </div>
+    </nav>
+
+    <section class="sidebar">
+        <div class="sidebar-header">
+            بخش های مدریتی
+        </div>
+        <section class="sidebar-link">
+            <a class="click" href="#">پنل <span class="iconify" data-icon="carbon:open-panel-filled-right"></span></a>
+        </section>
+        <section class="sidebar-link">
+            <a class="click selected" href="/all-in-one/html/admin-panel/category/index.html">دسته بندی ها<span
+                    class="iconify" data-icon="bx:category"></span></a>
+        </section>
+        <section class="sidebar-link">
+            <a class="click" href="/all-in-one/html/admin-panel/posts/index.html">پست ها<span class="iconify"
+                    data-icon="ic:baseline-article"></span></a>
+        </section>
+    </section>
+
+    <section class="app" id="app">
+
+        <section class="container-fluid">
+            <section class="row">
+                <section class="posts-create">
+                    <form action="#" method="get">
+                        <div class="form-group">
+                            <label for="image">تصویر</label>
+                            <input type="file" accept="image/png, image/gif, image/jpeg" class="form-control"
+                                name="image" id="image" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">سرفصل</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="price">قیمت</label>
+                            <input type="number" class="form-control" name="price" id="price" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="sqft">متراژ</label>
+                            <input type="number" class="form-control" name="sqft" id="sqft" placeholder="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category">دسته بندی</label>
+                            <select name="category" class="form-control" id="category">
+                                <option value="cat-1">مسکن</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="status">وضعیت</label>
+                            <select name="status" class="form-control" id="status">
+                                <option value="status-1">تایید شده</option>
+                                <option value="status-1">تایید نشده</option>
+                                <option value="status-1">حذف شده</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="bed">اتاق</label>
+                            <input type="number" class="form-control" name="bed" id="bed" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="bath">حمام</label>
+                            <input type="text" class="form-control" name="bath" id="bath" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="parking">پارکینگ</label>
+                            <div class="radio">
+                                <label for="parking">دارد</label>
+                                <input type="radio" name="parking" id="parking" value="yes-parking">
+
+                            </div>
+                            <div class="radio">
+                                <label for="parking">ندارد</label>
+                                <input type="radio" name="parking" id="parking" value="no-parking">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="balcony">بالکن</label>
+                            <div class="radio">
+                                <label for="balcony">دارد</label>
+                                <input type="radio" name="balcony" id="balcony" value="yes-balcony">
+
+                            </div>
+                            <div class="radio">
+                                <label for="balcony">ندارد</label>
+                                <input type="radio" name="balcony" id="balcony" value="no-balcony">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">بدنه</label>
+                            <textarea name="body" id="body"  rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">آدرس</label>
+                            <textarea name="address" id="address"  rows="5"></textarea>
+                        </div>
+                        <div class="form-group buttons">
+                            <button type="submit" class="btn btn-success ">ایجاد دسته بندی</button>
+                            <a class="byn btn-danger" href="#">انصراف</a>
+                        </div>
+
+                    </form>
+                </section>
+            </section>
+        </section>
+
+    </section>
+
+
+
+</body>
+
+</html>

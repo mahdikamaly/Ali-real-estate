@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Panel Create</title>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/all-in-one/css/bootstrap/bootstrap.min.css" media="all" type="text/css">
+
+    <!-- Admin Panel Css -->
+    <link rel="stylesheet" href="/all-in-one/css/admin-panel/admin.panel.css" media="all" type="text/css">
+
+
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="left">
+            <a class="click" href="#">خروج</a>
+        </div>
+        <div class="right">
+            <h1>پنل مدریت</h1>
+        </div>
+    </nav>
+
+    <section class="sidebar">
+        <div class="sidebar-header">
+            بخش های مدریتی
+        </div>
+        <section class="sidebar-link">
+            <a class="click" href="#">پنل <span class="iconify" data-icon="carbon:open-panel-filled-right"></span></a>
+        </section>
+        <section class="sidebar-link">
+            <a class="click selected" href="/all-in-one/html/admin-panel/category/index.html">دسته بندی ها<span class="iconify" data-icon="bx:category"></span></a>
+        </section>
+        <section class="sidebar-link">
+            <a class="click" href="/all-in-one/html/admin-panel/posts/index.html">پست ها<span class="iconify" data-icon="ic:baseline-article"></span></a>
+        </section>
+    </section>
+
+    <section class="app" id="app">
+
+        <section class="container-fluid">
+            <section class="row">
+                <section class="category-create">
+                    <form action="create.php" method="post">
+                        <section class="form-group">
+                            <label for="name">نام دسته بندی</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="">
+                        </section>
+                        <section class="form-group">
+                            <button type="submit" class="btn btn-success ">ایجاد دسته بندی</button>
+                            <a class="byn btn-danger" href="#">انصراف</a>
+                        </section>
+
+                    </form>
+                </section>
+            </section>
+        </section>
+
+    </section>
+
+
+
+</body>
+
+</html>
