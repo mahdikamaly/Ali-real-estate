@@ -64,7 +64,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: white;
-  padding: 1em 3em;
+  padding: 2em 2em;
   gap: 2rem;
 }
 
@@ -225,7 +225,8 @@ body .sign-in form .form-buttons {
   gap: 1rem;
 }
 
-body .sign-in form .form-buttons button, body .sign-in form .form-buttons a {
+body .sign-in form .form-buttons button,
+body .sign-in form .form-buttons a {
   all: unset;
   width: 6ch;
   background-color: #845ec2;
@@ -239,7 +240,8 @@ body .sign-in form .form-buttons button, body .sign-in form .form-buttons a {
   transition: all 0.5s ease;
 }
 
-body .sign-in form .form-buttons button:hover, body .sign-in form .form-buttons a:hover {
+body .sign-in form .form-buttons button:hover,
+body .sign-in form .form-buttons a:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }

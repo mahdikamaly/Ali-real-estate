@@ -55,7 +55,7 @@ header {
     flex-direction: row-reverse;
     justify-content: space-between;
     color: white;
-    padding: 1em 3em;
+    padding: 2em 2em;
     gap: 2rem;
     .right {
         display: flex;
@@ -144,12 +144,12 @@ body {
                 }
             }
             .form-buttons {
-                
                 display: flex;
                 justify-content: center;
                 width: 100%;
                 gap: 1rem;
-                button , a {
+                button,
+                a {
                     all: unset;
                     width: 6ch;
                     background-color: $color-1;
