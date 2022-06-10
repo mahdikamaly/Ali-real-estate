@@ -18,9 +18,11 @@
 
 <body>
 
+
     <nav class="nav">
         <div class="left">
             <a class="click" href="/html/main-page/index.html">خروج</a>
+            <a class="click" href="/html/main-page/index.html">صفحه اصلی</a>
         </div>
         <div class="right">
             <h1>پنل مدریت</h1>
@@ -32,7 +34,8 @@
             بخش های مدریتی
         </div>
         <section class="sidebar-link">
-            <a class="click" href="#">پنل <span class="iconify" data-icon="carbon:open-panel-filled-right"></span></a>
+            <a class="click" href="/html/admin-panel/admin-main/index.html">پنل <span class="iconify"
+                    data-icon="carbon:open-panel-filled-right"></span></a>
         </section>
         <section class="sidebar-link">
             <a class="click " href="/html/admin-panel/category/index.html">دسته بندی ها<span class="iconify"
@@ -79,14 +82,6 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="status">وضعیت</label>
-                            <select name="status" class="form-control" id="status">
-                                <option value="status-1">تایید شده</option>
-                                <option value="status-1">تایید نشده</option>
-                                <option value="status-1">حذف شده</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
                             <label for="bed">اتاق</label>
                             <input type="number" class="form-control" name="bed" id="bed" placeholder="">
                         </div>
@@ -118,14 +113,16 @@
                                 <input type="radio" name="balcony" id="balcony" value="no-balcony">
                             </div>
                         </div>
+                        <div class="form-group">
 
+                        </div>
                         <div class="form-group">
                             <label for="name">بدنه</label>
-                            <textarea name="body" id="body"  rows="5"></textarea>
+                            <textarea name="body" id="body" rows="5"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="address">آدرس</label>
-                            <textarea name="address" id="address"  rows="5"></textarea>
+                            <textarea name="address" id="address" rows="5"></textarea>
                         </div>
                         <div class="form-group buttons">
                             <button type="submit" class="btn btn-success ">ایجاد پست</button>

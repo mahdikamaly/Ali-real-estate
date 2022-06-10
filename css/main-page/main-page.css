@@ -70,7 +70,7 @@ header {
   color: white;
   padding: 1em 2em;
   gap: 2rem;
-  z-index: 1;
+  z-index: 5;
 }
 
 header .right {
@@ -132,6 +132,279 @@ body {
   padding-bottom: 6rem;
 }
 
+body .background-slider {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 90%;
+  margin: 0 !important;
+  position: relative !important;
+}
+
+body .background-slider .slide img {
+  width: 100%;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 0 1rem 1rem;
+}
+
+body .background-slider .slide .slide-title {
+  position: absolute;
+  background-color: white;
+  bottom: 0%;
+  left: 10%;
+  border-radius: 1rem 1rem 0 0;
+  padding: 1.7rem;
+  width: 100%;
+  max-width: 30ch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+}
+
+body .background-slider .slide .slide-title h1 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+body .background-slider .slide .slide-title .title-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+body .background-slider .fa-angle-left {
+  font-size: 3rem;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  -ms-flex-item-align: center;
+      align-self: center;
+  z-index: 2;
+  top: 40%;
+  background-color: white;
+  left: 2rem;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50vw;
+  padding: 0.5em;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+body .background-slider .fa-angle-right {
+  font-size: 3rem;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  -ms-flex-item-align: center;
+      align-self: center;
+  z-index: 2;
+  top: 40%;
+  background-color: white;
+  right: 2rem;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50vw;
+  padding: 0.5em;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+body .intro {
+  margin-top: 2rem;
+  -ms-grid-row-align: center;
+      align-self: center;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+body .intro img {
+  width: 100%;
+}
+
+body .intro .left {
+  -webkit-clip-path: polygon(0% 0%, 75% 0, 100% 50%, 75% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 75% 0, 100% 50%, 75% 100%, 0% 100%);
+}
+
+body .todays-estates {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 4em;
+  /* the slides */
+  /* the parent */
+}
+
+body .todays-estates .slick-slide {
+  margin: 0 1rem;
+}
+
+body .todays-estates .slick-list {
+  margin: 0 -1rem;
+}
+
+body .todays-estates .todays-estates-list {
+  width: 100%;
+}
+
+body .todays-estates .todays-estates-list .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ddf1fa;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
+  padding-bottom: 2em;
+  gap: 1.5rem;
+  direction: ltr;
+  margin-bottom: 1rem;
+}
+
+body .todays-estates .todays-estates-list .card .card-header .card-image {
+  padding: 0;
+}
+
+body .todays-estates .todays-estates-list .card .card-header .card-image img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  border-radius: 0.5rem 0.5rem 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .todays-estates .todays-estates-list .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0 2em !important;
+  gap: 0.5rem;
+}
+
+body .todays-estates .todays-estates-list .card .card-body .card-row {
+  padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3rem;
+  text-align: right;
+}
+
+body .todays-estates .todays-estates-list .card .card-body .card-name {
+  padding: 0 1em;
+}
+
+body .todays-estates .todays-estates-list .card .card-body .card-name h1 {
+  font-size: 1.5rem;
+}
+
+body .todays-estates .todays-estates-list .card .card-body .card-address {
+  background-color: #845ec2;
+  border-radius: 50vw;
+  padding: 0.3em 1em;
+  color: white;
+}
+
+body .todays-estates .todays-estates-list .card .card-body .card-options {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+  direction: rtl;
+  gap: 0.5rem;
+}
+
+body .todays-estates .todays-estates-list .card .card-body .card-options .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+body .todays-estates .todays-estates-list .card .card-body .card-options .option h1 {
+  font-size: 1rem;
+}
+
+body .todays-estates .todays-estates-list .card .card-body .card-options .option h1::after {
+  content: " : ";
+}
+
+body .todays-estates .todays-estates-list .card .card-body .card-price {
+  font-size: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .todays-estates .todays-estates-list .card .card-body .card-price h1 {
+  font-size: 1.5rem;
+}
+
 body .category-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,7 +415,9 @@ body .category-list {
           flex-direction: column;
   gap: 2rem;
   padding-bottom: 0;
-  padding: 0 2em;
+  width: 90%;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 body .category-list .category-list-header {
