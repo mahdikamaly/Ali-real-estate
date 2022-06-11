@@ -435,7 +435,7 @@ body {
       -ms-flex-pack: start;
           justify-content: start;
   background-color: rebeccapurple;
-  border-radius: 0rem 0 1rem 1rem;
+  border-radius: 1rem;
   padding: 2em;
   gap: 0.5rem;
 }
