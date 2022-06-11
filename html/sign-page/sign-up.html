@@ -27,7 +27,7 @@
             </div>
             <ul class="nav-bar">
                 <li class="click"><a href="/html/main-page/index.html">خانه<i class="fa-solid fa-house"></i></a></li>
-                <li class="click user-account "><a href="/html/sign-page/sign-up.html">ثبت نام <i
+                <li class="click user-account "><a href="/html/sign-page.html">ثبت نام <i
                             class="fa-solid fa-user"></i></a>
                 </li>
     
@@ -43,18 +43,26 @@
     </header>
 
 
-    <section class="sign-in">
+    <section class="sign-up">
 
 
         <form action="/html/admin-panel/admin-main/index.html" method="get">
             <div class="form-header">
-                <h1>ورود کاربران</h1>
-                <p>برای استفاده از امکانات سایت میتوانید وارد شوید و بصورت کاربر اصلی سایت فعالیت کنید</p>
+                <h1>ثبت نام کاربر</h1>
+                <p>برای استفاده از امکانات سایت میتوانید قبت نام کنید  و بصورت کاربر اصلی سایت فعالیت کنید</p>
             </div>
             <div class="form-body">
                 <div class="form-group">
                     <input type="text" name="name" id="name" required>
                     <label for="name">نام</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="familiy" id="familiy" required>
+                    <label for="familiy">نام خانوادگی</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">ایمیل</label>
                 </div>
                 <div class="form-group">
                     <input type="password" name="password" id="password" required>
