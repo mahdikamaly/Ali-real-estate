@@ -49,6 +49,13 @@ html {
   font-family: "BYekan", sans-serif;
 }
 
+body img,
+html img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header {
   width: 100%;
   background-color: #845ec2;
@@ -143,7 +150,7 @@ body {
 
 .main-page .background-slider .slide img {
   width: 100%;
-  height: 40rem;
+  height: 70vh;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0 0 1rem 1rem;
@@ -249,17 +256,44 @@ body {
   width: 90%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.main-page .intro img {
-  width: 100%;
+  -ms-grid-columns: 0.4fr 0.6fr;
+      grid-template-columns: 0.4fr 0.6fr;
+  background-color: #ddf1fa;
+  border-radius: 1rem;
 }
 
 .main-page .intro .left {
   -webkit-clip-path: polygon(0% 0%, 75% 0, 100% 50%, 75% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 75% 0, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.main-page .intro .left img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+  -webkit-animation: parallax 50s ease infinite;
+          animation: parallax 50s ease infinite;
+}
+
+.main-page .intro .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  direction: rtl;
+  gap: 1rem;
+  padding: 4em;
 }
 
 .main-page .todays-estates {
@@ -418,6 +452,7 @@ body {
   width: 90%;
   -ms-flex-item-align: center;
       align-self: center;
+  border-radius: 1rem;
 }
 
 .main-page .category-list .category-list-header {
@@ -466,8 +501,8 @@ body {
   border-radius: 1rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  -ms-grid-columns: (minmax(calc(16rem + 1vw), 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(calc(16rem + 1vw), 1fr));
   gap: 2rem;
   direction: rtl;
 }
@@ -981,5 +1016,32 @@ body {
 
 .detail-page .similar-estates .similar-estates-list .card .card-body .card-price h1 {
   font-size: 1.5rem;
+}
+
+@-webkit-keyframes parallax {
+  0% {
+    object-position: left;
+  }
+  50% {
+    object-position: right;
+  }
+  100% {
+    object-position: left;
+  }
+}
+
+@keyframes parallax {
+  0% {
+    -o-object-position: left;
+       object-position: left;
+  }
+  50% {
+    -o-object-position: right;
+       object-position: right;
+  }
+  100% {
+    -o-object-position: left;
+       object-position: left;
+  }
 }
 /*# sourceMappingURL=main-page.css.map */
